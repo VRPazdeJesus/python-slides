@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Python</title>
+
+		<meta name="description" content="Programador Poliglota">
+		<meta name="author" content="Víctor Romário">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/style-vr/style.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="img/planodefundo.png">
+					<h1 class="shadow">Programando em Python</h1>
+					<h3 class="shadow">Aprendendo Lógica de Programação</h3>
+					<p>
+						<small class="shadow">Criador por <a href="http://instagram.com/vrvictorromario">Víctor Romário</a></small>
+					</p>
+				</section>
+
+				<section data-background="img/linguagem.jpg">
+					<section>
+						<h1 class="shadow">O que é Linguagem de Programação?</h1>
+					</section>
+					<section>
+						<h2 class="shadow">Computadores = Cérebros eletrônicos?</h2>
+						<h3 class="shadow"><span class="fragment">Não!</span></h3>
+						<p class="shadow"><span class="fragment highlight-green shadow">Computadores são máquinas que não pensam!</span></p>
+						<p class="shadow"><span class="fragment highlight-yellow shadow">Executam!</span></p>
+					</section>
+					<section>
+						<h2 class="shadow">Computadores podem executar cálculos 10 bilhões de vezes mais rápido que nosso cérebro!</h2>
+					</section>
+					<section data-background="img/surpresa.gif">
+						
+					</section>
+					<section>
+						<h2 class="shadow">Mas ele está executando e não pensando</h2>
+					</section>
+					<section data-background="img/diva.gif">
+						
+					</section>
+				</section>
+
+				<section data-background="img/planodefundo3.png">
+					<section>
+						<h1 class="shadow">Por que começar com a linguagem Python ?</h1>
+					</section>
+					<section>
+						<h2>1. Simplicidade e Clareza</h2>
+						<blockquote class="shadow">
+							&ldquo;Embora <span class="fragment highlight-yellow shadow">simples</span>, é também uma linguagem poderosa, podendo ser usada para administrar sistemas 
+							e desenvolver grandes projetos. É uma linguagem <span class="fragment highlight-yellow shadow">clara</span> e <span class="fragment highlight-yellow shadow">objetiva</span>, 
+							pois vai direto ao ponto, sem rodeios.&rdquo;
+							<p style="font-size: medium">*1 Menezes, N. N. C. Introdução a Computação com Python. 2 ed. Novatec, 2014.</p>
+						</blockquote>
+					</section>
+					<section>
+						<h2>2. Software Livre</h2>
+						<blockquote class="shadow">
+							&ldquo;Ou seja, pode ser utilizada <span class="fragment highlight-yellow shadow">gratuitamente</span> nos seus projetos, graças aos trabalhos da <span class="fragment highlight-yellow shadow">Python Fundation</span> e de inúmeros colaboradores.&rdquo;
+							<p style="font-size: medium">*1 Menezes, N. N. C. Introdução a Computação com Python. 2 ed. Novatec, 2014.</p>
+						</blockquote>
+					</section>
+					<section>
+						<h2>3. Multiplataforma</h2>
+						<blockquote class="shadow">
+							&ldquo;Você pode utilizar Python em praticamente qualquer <span class="fragment highlight-yellow shadow">arquitetura de computadores</span> ou <span class="fragment highlight-blue shadow">sistema operacional</span>, como Linux, FREEBSD, Microsoft Windows ou Mac OS X.&rdquo;
+							<p style="font-size: medium">*1 Menezes, N. N. C. Introdução a Computação com Python. 2 ed. Novatec, 2014.</p>
+						</blockquote>
+					</section>
+					<section>
+						<h2>4. Aplicação</h2>
+						<blockquote class="shadow">
+							&ldquo;Python vem crescendo em várias áreas da computação, como <span class="fragment highlight-yellow shadow">inteligência artificial</span>, <span class="fragment highlight-blue shadow">banco de dados</span>, <span class="fragment highlight-yellow shadow">biotecnologia</span>, 
+							<span class="fragment highlight-blue shadow">animação 3D</span>, <span class="fragment highlight-blue shadow">aplicativos mobiles</span>, <span class="fragment highlight-yellow shadow">jogos</span>, e <span class="fragment highlight-yellow shadow">plataformas web</span>.&rdquo;
+							<p style="font-size: medium">*1 Menezes, N. N. C. Introdução a Computação com Python. 2 ed. Novatec, 2014.</p>
+						</blockquote>
+					</section>
+				</section>
+
+				<section data-background="img/python.png">
+					<section>
+						<h1 class="shadow">Características da Linguagem Python</h1>
+					</section>
+					<section>
+						<h2 class="shadow">Python é uma linguagem interpretada!</h2>
+						<p class="shadow">O interpretador é um programa que aceita comandos escritos em Python e os executa linha por linha.</p>
+						<p class="shadow">É ele quem vai traduzir nossos programas em um formato que possa ser executado pelo computador.</p>
+						<p class="shadow">Sem um interpretador, nossos programas são apenas textos.</p>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							<h2 class="shadow">Hora do código</h2>
+	
+							<p class="shadow">
+								O comando print serve para exibir algum dado no terminal ou na tela do computador.
+							</p>
+	
+							```
+							print("To Programando em Python")
+							```
+							<p class="shadow">As aspas não aparecem na tela, porque precisamos de um simbolo para limitar o início e o fim do nossos textos, neste cado o simbolo é aspas.</p>
+						</script>
+					</section>
+					<section>
+						<h2 class="shadow">Cuidados ao digitar</h2>
+						<ol>
+							<li class="shadow">Letras maiúsculas e minúsculas são diferentes</li>
+							<pre><code class="hljs">print("To Programando em Python") #CERTO</code></pre>
+							<pre><code class="hljs">Print("To Programando em Python") #ERRADO</code></pre>
+							<li class="shadow">Aspas não devem ser esquecidas para indicar textos</li>
+							<li class="shadow">Parênteses não são opcionais</li>
+							<li class="shadow">Espaços são importantes</li>
+						</ol>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1>Algoritmos</h1>
+						<p><span class="fragment highlight-blue shadow">Conjunto de instruções descrita de forma clara e precisa.</span></p>
+						<p><span class="fragment highlight-yellow shadow">Não pode ser ambíguo! Cada instrução deve ser precisa, sem permitir mais de uma interpretação.</span></p>
+					</section>
+					<section>
+						<h2>Algoritmos são capazes de realizar:</h2>
+						<p><span class="fragment highlight-blue shadow">Ler e escrever dados.</span></p>
+						<p><span class="fragment highlight-yellow shadow">Avaliar expressões algébricas, relacionais e lógicas.</span></p>
+						<p><span class="fragment highlight-blue shadow">Tomar decisões com base nos resultados das expressões avaliadas.</span></p>
+						<p><span class="fragment highlight-yellow shadow">Repetir um conjunto de ações de acordo com uma condição.</span></p>
+					</section>
+					<section>
+						<h2 class="shadow">Algoritmos</h2>
+						<blockquote class="shadow">
+							É a lógica do nosso problema. É a sequência de passos que fazemos na nossa cabeça para executar uma tarefa ou resolver um problema.
+						</blockquote>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Resolvendo Problemas
+							### Média de 3 números
+							####     R = (X + Y + Z) / 3
+							
+							```
+							1º - Digitar os 3 números
+							2º - Realizar a soma dos 3 números
+							3º - Dividir o resultado da soma pelo total de números
+							4º - Exibir o resultado
+							```
+						</script>
+					</section>
+					<section data-background="img/pensar.gif">
+						<h2>... E como vamos tranformar isso em código ?</h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1 class="shadow">Variáveis</h1>
+						<p class="shadow">
+							<span class="fragment highlight-blue shadow">É uma forma de guardar valores na memória do computador.</span>
+						</p>
+						<p class="shadow">
+							<span class="fragment highlight-yellow shadow">Em Python não precisamos declarar o tipo.</span>
+						</p>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Variáveis
+							<span class="fragment highlight-yellow shadow">Neste caso, ajuda a guardar os 3 números que serão somados e o resultado.</span>
+							```
+								//Declarando variáveis e guardando os numeros nelas
+								numero1 = 10
+								numero2 = 12
+								numero3 = 14
+								//Declarando variável soma e guardando o resultado da soma
+								soma = numero1 + numero2 + numero3
+								//Declarando variável media e guardando o resultado da divisão
+								media = soma / 3
+								//Mostrando o valor que está salvo na variável
+								print(media)
+							```
+							<span class="fragment highlight-green shadow">Os nomes das variáveis não devem conter espaços em branco e nem começar com número.</span>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Variáveis
+							<span class="fragment highlight-yellow shadow">As variáveis podem ser dos tipos:</span>
+							```
+								//valores numéricos inteiros (int)
+								numero1 = 10 
+								//valores numéricos com pontos flutuantes (float)     
+								numero2 = 5.0 
+								//valor tipo lógico verdadeiro (boolean)
+								aprovado =  True
+								//valor tipo lógico falso (boolean)
+								resultado = False 
+								//valor tipo texto (string)
+								nome = "Víctor Romário" 
+
+							```
+						</script>
+					</section>
+					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+						<h2 class="shadow">Curiosidade</h2> 
+						<p class="shadow">Podemos utilizar acentuação nos nomes da variáveis</p>
+						<blockquote class="shadow">
+							&ldquo;Pois, por padrão, os programas são interpretados utilizando-se um conjunto de caracteres chamado UTF-8, capaz de representar praticamente
+							todas as letras do alfabeto.&rdquo;
+							<p style="font-size: medium">*1 Menezes, N. N. C. Introdução a Computação com Python. 2 ed. Novatec, 2014.</p>
+						</blockquote>
+					</section>
+					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+						<h2 class="shadow">... E se a gente quisesse digitar o valor ?</h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h1 class="shadow">Entrada de Dados</h1>
+						<p class="shadow">
+							Ocorre quando o seu programa recebe dados <span class="fragment highlight-blue shadow">digitados pelo teclado do computador</span>
+							ou <span class="fragment highlight-yellow shadow">a partir da leitura de um arquivo.</span>
+						</p>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Entrada de Dados
+							A função <span class="fragment highlight-blue shadow">input</span> <span class="fragment highlight-green shadow">recebe como parâmetro uma mensagem que vai ser exibida</span> e
+							<span class="fragment highlight-yellow shadow">pega o valor digitado</span> pelo usuário
+							```
+								input("Digite seu nome: ")
+								//Do jeito que o comando está acima o resultado digitado 
+								//pelo usuário não está sendo salvo
+								nome = input("Digite seu nome novamente: ")
+								print("Agora sim!")
+								//Agora estamos salvando o valor digitado pelo usuário na
+								//variável nome
+								print(nome)
+								print("Olá, %s", % nome)
+							```
+						</script>
+					</section>
+					<section>
+						<h2>Marcadores</h2>
+						<table>
+							<thead>
+								<tr>
+									<th>Marcador</th>
+									<th>Tipo</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>%d</td>
+									<td>Números inteiros</td>
+								</tr>
+								<tr>
+									<td>%s</td>
+									<td>Strings</td>
+								</tr>
+								<tr>
+									<td>%f</td>
+									<td>Números decimais</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Entrada de Dados
+							#### No nosso programa...
+							```
+								#Declarando variáveis e guardando os numeros nelas
+								numero1 = input("Digite um número: ")
+								numero2 = input("Digite outro número: ")
+								numero3 = input("Digite mais um número: ")
+								#Declarando variável soma e guardando o resultado da soma
+								soma = numero1 + numero2 + numero3
+								#Declarando variável media e guardando o resultado da divisão
+								media = soma / 3
+								#Mostrando o valor que está salvo na variável
+								print(media)
+							```
+							<span class="fragment highlight-green shadow">Tudo que é digitado é um texto!</span>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							Utilizaremos a função <span class="fragment highlight-yellow shadow">int( )</span> para transformar
+							do tipo texto para o tipo numérico.
+							```
+								#Declarando variáveis e guardando os numeros nelas
+								numero1 = int(input("Digite um número: "))
+								numero2 = int(input("Digite outro número: "))
+								numero3 = int(input("Digite mais um número: "))
+								#Declarando variável soma e guardando o resultado da soma
+								soma = numero1 + numero2 + numero3
+								#Declarando variável media e guardando o resultado da divisão
+								media = soma / 3
+								#Mostrando o valor que está salvo na variável
+								print(media)
+							```
+							Ex: Entra <span class="fragment highlight-green shadow">"100"</span> o <span class="fragment highlight-yellow shadow">int( )</span>
+							transforma em <span class="fragment highlight-green shadow">100</span>.
+						</script>
+					</section>
+				</section>
+				
+				<!-- <section data-background-video="video/LyricPython.mp4" data-background-color="#000000">
+					
+				</section> -->
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
