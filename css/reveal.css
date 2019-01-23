@@ -1589,3 +1589,12 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+.font-especial {
+  font-size: 2rem !important;
+}
+
+.tam-img-especial {
+  max-width: 50% !important;
+  max-height: 50% !important;
+}
