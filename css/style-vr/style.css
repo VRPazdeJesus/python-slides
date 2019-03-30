@@ -33,3 +33,6 @@
 .reveal .slides section .fragment.highlight-yellow.visible {
   color: #FEB012;
 }
+.larg-max {
+  max-width: 50%;
+}
