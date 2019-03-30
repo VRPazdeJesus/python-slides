@@ -49,7 +49,6 @@
 						<small class="shadow">Criador por <a href="http://instagram.com/vrvictorromario">Víctor Romário</a></small>
 					</p>
 				</section>
-
 				<!-- Sessão de Configuração -->
 				<section>
 					<section data-markdown>
@@ -63,8 +62,7 @@
 						</script>
 					</section>
 				</section>
-
-
+				<!-- Sessão o que é Linguagem de Programação -->
 				<section data-background="img/linguagem.jpg">
 					<section>
 						<h1 class="shadow">O que é Linguagem de Programação?</h1>
@@ -114,7 +112,7 @@
 						<h3 class="shadow"><a href="https://www.tecmundo.com.br/inteligencia-artificial/102782-tay-twitter-conseguiu-corromper-ia-microsoft-24-horas.htm">Clique aqui</a> para ler a notícia completa</h3>
 					</section>
 				</section>
-
+				<!-- Sessão Características da Linguagem Python -->
 				<section data-background="img/python.png">
 					<section>
 						<h1 class="shadow">Características da Linguagem Python</h1>
@@ -149,7 +147,7 @@
 						</ol>
 					</section>
 				</section>
-
+				<!-- Sessão Por que começar com Python -->
 				<section data-background="img/planodefundo3.png">
 					<section>
 						<h1 class="shadow">Por que começar com a linguagem Python ?</h1>
@@ -186,7 +184,7 @@
 						</blockquote>
 					</section>
 				</section>
-
+				<!-- Sessão Algoritmos -->
 				<section>
 					<section>
 						<h1>Algoritmos</h1>
@@ -206,6 +204,9 @@
 							É a lógica do nosso problema. É a sequência de passos que fazemos na nossa cabeça para executar uma tarefa ou resolver um problema.
 						</blockquote>
 					</section>
+					<section>
+						<h2 class="shadow">Dinâmica</h2>
+					</section>
 					<section data-markdown>
 						<script type="text/template">
 							## Resolvendo Problemas
@@ -213,10 +214,36 @@
 							####     R = (X + Y + Z) / 3
 							
 							```
-							1º - Digitar os 3 números
+							1º - Receber os 3 números
 							2º - Realizar a soma dos 3 números
 							3º - Dividir o resultado da soma pelo total de números
 							4º - Exibir o resultado
+							```
+						</script>
+					</section>
+					<section data-background="img/pensar.gif">
+						<h2>... E como vamos tranformar isso em código ?</h2>
+					</section>
+				</section>
+				<!-- Sessão Fluxograma -->
+				<section>
+					<section>
+						<h1>Fluxograma</h1>
+						<img src="img/fluxograma.jpg" alt="">
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Resolvendo Problemas
+							### Média de 3 números
+							####     R = (X + Y + Z) / 3
+							
+							```
+							n1 = float(input("Digite um número"))
+							n2 = float(input("Digite outro número"))
+							n3 = float(input("Digite mais um número"))
+							soma = n1+n2+n3
+							media = soma / 3
+							print("A média foi: ", media)
 							```
 						</script>
 					</section>
@@ -237,14 +264,6 @@
 						<pre><code class="hljs">volume é 3.14 vezes 2 vezes 2 vezes 7</code></pre>
 						<h4 class="shadow">Como eram feitos os algoritmos na babilôia,  1790  AC, para calcular problemas do cotidiano, neste caso, o volume de uma cisterna.</h4>
 					</section>
-					<section>
-						<h4 class="shadow">Algoritmo Literal</h4>
-						<pre><code class="hljs">volume é 3.14 vezes 2 vezes 2 vezes 7</code></pre>
-						<h4 class="shadow">Algoritmo em Python</h4>
-						<pre><code class="hljs">volume = 3.14 * 2 * 2 * 7</code></pre>
-						<h4 class="shadow">Mas desta forma, o resultado sempre dará o mesmo!</h4>
-						<h4 class="shadow">O que utilizar para fazer variar o resultado?</h4>
-					</section>
 				</section>
 				<!-- Variáveis -->
 				<section data-background="img/stay.jpg">
@@ -256,22 +275,6 @@
 						<p class="shadow">
 							<span class="fragment highlight-yellow shadow">Em Python não precisamos declarar o tipo.</span>
 						</p>
-					</section>
-					<section data-markdown>
-						<script type="text/template">
-							## Variáveis
-							<span class="font-especial fragment highlight-yellow shadow">Neste caso, ajuda a guardar os 3 valores:</span>
-							```
-								//Declarando variáveis e guardando os numeros nelas
-								raio = 2
-								altura = 7
-								//Declarando variável resultado
-								resultado = 3.14 * raio * raio * altura
-								//Mostrando o valor que está salvo na variável
-								print(resultado)
-							```
-							<span class="font-especial fragment highlight-green shadow">Os nomes das variáveis não devem conter espaços em branco e nem começar com número. </span><span class="font-especial fragment highlight-blue shadow">Mas pode conter _ (underline)</span>
-						</script>
 					</section>
 					<section data-markdown>
 						<script type="text/template">
